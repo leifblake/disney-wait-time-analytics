@@ -14,6 +14,8 @@ import {
   Line
 } from "recharts";
 
+const DATA_BASE = `${import.meta.env.BASE_URL}data/`;
+
 const PARK_COLORS = {
   "Magic Kingdom": "#7b61ff",
   EPCOT: "#00a6d6",
@@ -68,43 +70,43 @@ function App() {
   const [selectedRide, setSelectedRide] = useState("All Rides");
 
   useEffect(() => {
-    fetch("/data/current_top_waits.json")
+    fetch(`${DATA_BASE}current_top_waits.json`)
       .then((res) => res.json())
       .then(setTopWaits);
 
-    fetch("/data/average_wait_by_park.json")
+    fetch(`${DATA_BASE}average_wait_by_park.json`)
       .then((res) => res.json())
       .then(setParkAverages);
 
-    fetch("/data/average_wait_by_ride.json")
+    fetch(`${DATA_BASE}average_wait_by_ride.json`)
       .then((res) => res.json())
       .then(setRideAverages);
 
-    fetch("/data/average_wait_by_ride_hour.json")
+    fetch(`${DATA_BASE}average_wait_by_ride_hour.json`)
       .then((res) => res.json())
       .then(setRideHourAverages);
 
-    fetch("/data/average_wait_by_park_hour.json")
+    fetch(`${DATA_BASE}average_wait_by_park_hour.json`)
       .then((res) => res.json())
       .then(setParkHourAverages);
 
-    fetch("/data/park_status_counts.json")
+    fetch(`${DATA_BASE}park_status_counts.json`)
       .then((res) => res.json())
       .then(setStatusCounts);
 
-    fetch("/data/average_wait_by_hour.json")
+    fetch(`${DATA_BASE}average_wait_by_hour.json`)
       .then((res) => res.json())
       .then(setHourlyAverages);
 
-    fetch("/data/crowd_forecast_by_hour.json")
+    fetch(`${DATA_BASE}crowd_forecast_by_hour.json`)
       .then((res) => res.json())
       .then(setCrowdForecast);
 
-    fetch("/data/current_attraction_value.json")
+    fetch(`${DATA_BASE}current_attraction_value.json`)
       .then((res) => res.json())
       .then(setAttractionValues);
 
-    fetch("/data/weighted_park_crowd_index.json")
+    fetch(`${DATA_BASE}weighted_park_crowd_index.json`)
       .then((res) => res.json())
       .then(setWeightedParkCrowds);
   }, []);
