@@ -21,13 +21,8 @@
   },
   {
     "park_name": "EPCOT",
-    "status": "DOWN",
-    "status_count": 1
-  },
-  {
-    "park_name": "EPCOT",
     "status": "OPERATING",
-    "status_count": 52
+    "status_count": 53
   },
   {
     "park_name": "Hollywood Studios",
