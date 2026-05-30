@@ -1,7 +1,77 @@
 [
   {
+    "hour": "11:00",
+    "avg_wait_minutes": 35.6,
+    "total_wait_records": 17
+  },
+  {
+    "hour": "00:00",
+    "avg_wait_minutes": 33.2,
+    "total_wait_records": 56
+  },
+  {
+    "hour": "17:00",
+    "avg_wait_minutes": 32.9,
+    "total_wait_records": 828
+  },
+  {
+    "hour": "16:00",
+    "avg_wait_minutes": 32.6,
+    "total_wait_records": 816
+  },
+  {
+    "hour": "15:00",
+    "avg_wait_minutes": 31.2,
+    "total_wait_records": 769
+  },
+  {
+    "hour": "18:00",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 837
+  },
+  {
+    "hour": "14:00",
+    "avg_wait_minutes": 29.8,
+    "total_wait_records": 819
+  },
+  {
+    "hour": "20:00",
+    "avg_wait_minutes": 28.7,
+    "total_wait_records": 839
+  },
+  {
+    "hour": "19:00",
+    "avg_wait_minutes": 27.9,
+    "total_wait_records": 827
+  },
+  {
+    "hour": "21:00",
+    "avg_wait_minutes": 27.8,
+    "total_wait_records": 967
+  },
+  {
+    "hour": "12:00",
+    "avg_wait_minutes": 27.4,
+    "total_wait_records": 222
+  },
+  {
+    "hour": "22:00",
+    "avg_wait_minutes": 27.1,
+    "total_wait_records": 894
+  },
+  {
+    "hour": "13:00",
+    "avg_wait_minutes": 27.0,
+    "total_wait_records": 728
+  },
+  {
     "hour": "23:00",
-    "avg_wait_minutes": 26.1,
-    "total_wait_records": 67
+    "avg_wait_minutes": 26.5,
+    "total_wait_records": 652
+  },
+  {
+    "hour": "02:00",
+    "avg_wait_minutes": 17.1,
+    "total_wait_records": 79
   }
 ]
