@@ -588,3 +588,208 @@ tbody tr:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   GITHUB PAGES LAYOUT FIXES
+========================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.dashboard {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  padding: 56px 24px;
+  box-sizing: border-box;
+}
+
+.dashboard-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 34px;
+}
+
+.dashboard-header h1 {
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.dashboard-header p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+}
+
+.filter-bar {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  min-height: 170px;
+  padding: 22px;
+}
+
+.stat-card h3 {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+}
+
+.stat-card p {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.forecast-card,
+.chart-card,
+.table-card,
+.insights-card,
+.methodology-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.forecast-card {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.forecast-grid {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.forecast-item {
+  min-height: 135px;
+  padding: 20px;
+}
+
+.forecast-item p {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.chart-card {
+  min-width: 0;
+  padding: 24px;
+}
+
+.large-chart,
+.wide-chart,
+.heatmap-card {
+  grid-column: 1 / -1;
+}
+
+.chart-container {
+  width: 100%;
+  height: 360px;
+  min-width: 0;
+}
+
+.heatmap-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.insights-grid,
+.methodology-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .dashboard {
+    padding: 42px 18px;
+  }
+
+  .dashboard-header h1 {
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    height: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 32px 14px;
+  }
+
+  .dashboard-header {
+    text-align: left;
+  }
+
+  .dashboard-header h1 {
+    font-size: 3rem;
+  }
+
+  .dashboard-header p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .filter-bar {
+    align-items: stretch;
+    justify-content: stretch;
+  }
+
+  .filter-group,
+  .filter-group select {
+    width: 100%;
+  }
+
+  .stats-grid,
+  .forecast-grid,
+  .insights-grid,
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card,
+  .forecast-item,
+  .chart-card,
+  .table-card,
+  .insights-card,
+  .methodology-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
