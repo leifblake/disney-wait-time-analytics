@@ -1,26 +1,26 @@
 [
   {
     "park_name": "EPCOT",
-    "weighted_avg_wait_minutes": 43.0,
+    "weighted_avg_wait_minutes": 44.0,
     "tracked_headliner_count": 10,
-    "priority_weighted_wait": 47.1
+    "priority_weighted_wait": 47.8
   },
   {
     "park_name": "Hollywood Studios",
-    "weighted_avg_wait_minutes": 40.6,
+    "weighted_avg_wait_minutes": 39.4,
     "tracked_headliner_count": 8,
-    "priority_weighted_wait": 43.1
+    "priority_weighted_wait": 41.6
   },
   {
     "park_name": "Magic Kingdom",
-    "weighted_avg_wait_minutes": 30.0,
+    "weighted_avg_wait_minutes": 31.0,
     "tracked_headliner_count": 15,
-    "priority_weighted_wait": 31.2
+    "priority_weighted_wait": 32.0
   },
   {
     "park_name": "Animal Kingdom",
-    "weighted_avg_wait_minutes": 25.8,
+    "weighted_avg_wait_minutes": 22.5,
     "tracked_headliner_count": 6,
-    "priority_weighted_wait": 26.8
+    "priority_weighted_wait": 23.0
   }
 ]
