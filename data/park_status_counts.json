@@ -22,12 +22,12 @@
   {
     "park_name": "EPCOT",
     "status": "DOWN",
-    "status_count": 2
+    "status_count": 1
   },
   {
     "park_name": "EPCOT",
     "status": "OPERATING",
-    "status_count": 50
+    "status_count": 51
   },
   {
     "park_name": "Hollywood Studios",
@@ -47,11 +47,11 @@
   {
     "park_name": "Magic Kingdom",
     "status": "DOWN",
-    "status_count": 2
+    "status_count": 3
   },
   {
     "park_name": "Magic Kingdom",
     "status": "OPERATING",
-    "status_count": 47
+    "status_count": 46
   }
 ]
