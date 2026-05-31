@@ -116,8 +116,8 @@
   {
     "park_name": "EPCOT",
     "hour": "23:00",
-    "avg_wait_minutes": 33.1,
-    "total_wait_records": 16
+    "avg_wait_minutes": 32.1,
+    "total_wait_records": 31
   },
   {
     "park_name": "Hollywood Studios",
@@ -182,8 +182,8 @@
   {
     "park_name": "Hollywood Studios",
     "hour": "23:00",
-    "avg_wait_minutes": 34.5,
-    "total_wait_records": 11
+    "avg_wait_minutes": 35.7,
+    "total_wait_records": 22
   },
   {
     "park_name": "Magic Kingdom",
@@ -242,7 +242,7 @@
   {
     "park_name": "Magic Kingdom",
     "hour": "23:00",
-    "avg_wait_minutes": 20.7,
-    "total_wait_records": 34
+    "avg_wait_minutes": 21.9,
+    "total_wait_records": 67
   }
 ]
