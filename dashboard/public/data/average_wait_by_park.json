@@ -1,22 +1,22 @@
 [
   {
     "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 40.0,
-    "total_wait_records": 96
+    "avg_wait_minutes": 39.4,
+    "total_wait_records": 108
   },
   {
     "park_name": "EPCOT",
-    "avg_wait_minutes": 34.2,
-    "total_wait_records": 121
+    "avg_wait_minutes": 33.9,
+    "total_wait_records": 137
   },
   {
     "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 30.2,
-    "total_wait_records": 51
+    "avg_wait_minutes": 29.7,
+    "total_wait_records": 58
   },
   {
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 23.5,
-    "total_wait_records": 254
+    "avg_wait_minutes": 23.2,
+    "total_wait_records": 289
   }
 ]
