@@ -7,6 +7,12 @@
   },
   {
     "park_name": "Animal Kingdom",
+    "hour": "14:00",
+    "avg_wait_minutes": 32.1,
+    "total_wait_records": 7
+  },
+  {
+    "park_name": "Animal Kingdom",
     "hour": "23:00",
     "avg_wait_minutes": 22.5,
     "total_wait_records": 6
@@ -16,6 +22,12 @@
     "hour": "00:00",
     "avg_wait_minutes": 27.5,
     "total_wait_records": 16
+  },
+  {
+    "park_name": "EPCOT",
+    "hour": "14:00",
+    "avg_wait_minutes": 31.0,
+    "total_wait_records": 15
   },
   {
     "park_name": "EPCOT",
@@ -37,6 +49,12 @@
   },
   {
     "park_name": "Hollywood Studios",
+    "hour": "14:00",
+    "avg_wait_minutes": 39.4,
+    "total_wait_records": 9
+  },
+  {
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 34.5,
     "total_wait_records": 11
@@ -46,6 +64,12 @@
     "hour": "00:00",
     "avg_wait_minutes": 22.6,
     "total_wait_records": 33
+  },
+  {
+    "park_name": "Magic Kingdom",
+    "hour": "14:00",
+    "avg_wait_minutes": 21.0,
+    "total_wait_records": 30
   },
   {
     "park_name": "Magic Kingdom",
