@@ -16,6 +16,13 @@
   {
     "ride_name": "Alien Swirling Saucers",
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Alien Swirling Saucers",
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 25.0,
     "total_wait_records": 1
@@ -338,6 +345,13 @@
   {
     "ride_name": "Mickey & Minnie's Runaway Railway",
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 15.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Mickey & Minnie's Runaway Railway",
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 40.0,
     "total_wait_records": 1
@@ -361,6 +375,13 @@
     "park_name": "Magic Kingdom",
     "hour": "00:00",
     "avg_wait_minutes": 15.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Millennium Falcon: Smugglers Run",
+    "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 10.0,
     "total_wait_records": 1
   },
   {
@@ -485,6 +506,13 @@
   {
     "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 45.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 60.0,
     "total_wait_records": 1
@@ -501,6 +529,13 @@
     "park_name": "Magic Kingdom",
     "hour": "00:00",
     "avg_wait_minutes": 60.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Slinky Dog Dash",
+    "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 25.0,
     "total_wait_records": 1
   },
   {
@@ -569,8 +604,22 @@
   {
     "ride_name": "Star Tours \u2013 The Adventures Continue",
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Star Tours \u2013 The Adventures Continue",
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 5.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Star Wars: Rise of the Resistance",
+    "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 15.0,
     "total_wait_records": 1
   },
   {
@@ -702,6 +751,13 @@
   {
     "ride_name": "The Twilight Zone\u2122 Tower of Terror",
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "The Twilight Zone\u2122 Tower of Terror",
+    "park_name": "Hollywood Studios",
     "hour": "00:00",
     "avg_wait_minutes": 40.0,
     "total_wait_records": 1
@@ -753,6 +809,13 @@
     "park_name": "Magic Kingdom",
     "hour": "23:00",
     "avg_wait_minutes": 20.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Toy Story Mania!",
+    "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 5.0,
     "total_wait_records": 1
   },
   {

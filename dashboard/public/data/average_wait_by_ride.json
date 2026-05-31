@@ -18,18 +18,6 @@
     "total_wait_records": 2
   },
   {
-    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 60.0,
-    "total_wait_records": 1
-  },
-  {
-    "ride_name": "Slinky Dog Dash",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 57.5,
-    "total_wait_records": 2
-  },
-  {
     "ride_name": "Frozen Ever After",
     "park_name": "EPCOT",
     "avg_wait_minutes": 55.0,
@@ -42,16 +30,22 @@
     "total_wait_records": 2
   },
   {
+    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 52.5,
+    "total_wait_records": 2
+  },
+  {
     "ride_name": "Seven Dwarfs Mine Train",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 50.0,
     "total_wait_records": 2
   },
   {
-    "ride_name": "Star Wars: Rise of the Resistance",
+    "ride_name": "Slinky Dog Dash",
     "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 50.0,
-    "total_wait_records": 2
+    "avg_wait_minutes": 46.7,
+    "total_wait_records": 3
   },
   {
     "ride_name": "Big Thunder Mountain Railroad",
@@ -72,20 +66,8 @@
     "total_wait_records": 2
   },
   {
-    "ride_name": "Mickey & Minnie's Runaway Railway",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 45.0,
-    "total_wait_records": 2
-  },
-  {
     "ride_name": "Soarin' Across America",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 42.5,
-    "total_wait_records": 2
-  },
-  {
-    "ride_name": "The Twilight Zone\u2122 Tower of Terror",
-    "park_name": "Hollywood Studios",
     "avg_wait_minutes": 42.5,
     "total_wait_records": 2
   },
@@ -96,10 +78,22 @@
     "total_wait_records": 1
   },
   {
-    "ride_name": "Alien Swirling Saucers",
+    "ride_name": "Star Wars: Rise of the Resistance",
     "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 37.5,
-    "total_wait_records": 2
+    "avg_wait_minutes": 38.3,
+    "total_wait_records": 3
+  },
+  {
+    "ride_name": "The Twilight Zone\u2122 Tower of Terror",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 38.3,
+    "total_wait_records": 3
+  },
+  {
+    "ride_name": "Mickey & Minnie's Runaway Railway",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 35.0,
+    "total_wait_records": 3
   },
   {
     "ride_name": "Peter Pan's Flight",
@@ -110,12 +104,6 @@
   {
     "ride_name": "Space Mountain",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 35.0,
-    "total_wait_records": 2
-  },
-  {
-    "ride_name": "Toy Story Mania!",
-    "park_name": "Hollywood Studios",
     "avg_wait_minutes": 35.0,
     "total_wait_records": 2
   },
@@ -150,12 +138,6 @@
     "total_wait_records": 1
   },
   {
-    "ride_name": "Millennium Falcon: Smugglers Run",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 30.0,
-    "total_wait_records": 2
-  },
-  {
     "ride_name": "Na'vi River Journey",
     "park_name": "Animal Kingdom",
     "avg_wait_minutes": 30.0,
@@ -168,10 +150,28 @@
     "total_wait_records": 2
   },
   {
+    "ride_name": "Alien Swirling Saucers",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 26.7,
+    "total_wait_records": 3
+  },
+  {
     "ride_name": "Impressions de France",
     "park_name": "EPCOT",
     "avg_wait_minutes": 25.0,
     "total_wait_records": 2
+  },
+  {
+    "ride_name": "Toy Story Mania!",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 25.0,
+    "total_wait_records": 3
+  },
+  {
+    "ride_name": "Millennium Falcon: Smugglers Run",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 23.3,
+    "total_wait_records": 3
   },
   {
     "ride_name": "Astro Orbiter",
@@ -381,7 +381,7 @@
     "ride_name": "Star Tours \u2013 The Adventures Continue",
     "park_name": "Hollywood Studios",
     "avg_wait_minutes": 5.0,
-    "total_wait_records": 2
+    "total_wait_records": 3
   },
   {
     "ride_name": "Swiss Family Treehouse",

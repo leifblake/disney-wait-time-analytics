@@ -25,6 +25,12 @@
   },
   {
     "park_name": "Hollywood Studios",
+    "hour": "04:00",
+    "avg_wait_minutes": 17.2,
+    "total_wait_records": 9
+  },
+  {
+    "park_name": "Hollywood Studios",
     "hour": "23:00",
     "avg_wait_minutes": 34.5,
     "total_wait_records": 11
