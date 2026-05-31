@@ -2,439 +2,403 @@
   {
     "ride_name": "Guardians of the Galaxy: Cosmic Rewind",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 99.1,
-    "total_wait_records": 144
-  },
-  {
-    "ride_name": "Test Track",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 92.4,
-    "total_wait_records": 132
-  },
-  {
-    "ride_name": "Avatar Flight of Passage",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 80.4,
-    "total_wait_records": 155
-  },
-  {
-    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 73.1,
-    "total_wait_records": 135
-  },
-  {
-    "ride_name": "Slinky Dog Dash",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 66.7,
-    "total_wait_records": 138
+    "avg_wait_minutes": 95.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "TRON Lightcycle / Run",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 63.0,
-    "total_wait_records": 125
+    "avg_wait_minutes": 77.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Test Track",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 70.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 60.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Slinky Dog Dash",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 57.5,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Frozen Ever After",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 62.3,
-    "total_wait_records": 133
+    "avg_wait_minutes": 55.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Remy's Ratatouille Adventure",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 54.1,
-    "total_wait_records": 131
-  },
-  {
-    "ride_name": "Star Wars: Rise of the Resistance",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 53.3,
-    "total_wait_records": 126
-  },
-  {
-    "ride_name": "Soarin' Across America",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 51.1,
-    "total_wait_records": 144
+    "avg_wait_minutes": 55.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Seven Dwarfs Mine Train",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 50.8,
-    "total_wait_records": 124
+    "avg_wait_minutes": 50.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Star Wars: Rise of the Resistance",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 50.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Big Thunder Mountain Railroad",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 49.4,
-    "total_wait_records": 133
-  },
-  {
-    "ride_name": "Mickey & Minnie's Runaway Railway",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 43.8,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "Peter Pan's Flight",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 43.6,
-    "total_wait_records": 136
-  },
-  {
-    "ride_name": "Na'vi River Journey",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 43.0,
-    "total_wait_records": 154
-  },
-  {
-    "ride_name": "The Twilight Zone\u2122 Tower of Terror",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 43.0,
-    "total_wait_records": 136
-  },
-  {
-    "ride_name": "Toy Story Mania!",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 42.1,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "Kilimanjaro Safaris",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 40.5,
-    "total_wait_records": 144
-  },
-  {
-    "ride_name": "Millennium Falcon: Smugglers Run",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 39.8,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "Expedition Everest - Legend of the Forbidden Mountain",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 39.3,
-    "total_wait_records": 135
-  },
-  {
-    "ride_name": "Kali River Rapids",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 38.4,
-    "total_wait_records": 132
-  },
-  {
-    "ride_name": "Meet Anna and Elsa at Royal Sommerhus",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 38.2,
-    "total_wait_records": 114
-  },
-  {
-    "ride_name": "Tiana's Bayou Adventure",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 38.0,
-    "total_wait_records": 136
+    "avg_wait_minutes": 45.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 35.6,
-    "total_wait_records": 147
-  },
-  {
-    "ride_name": "Space Mountain",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 35.6,
-    "total_wait_records": 122
-  },
-  {
-    "ride_name": "Jungle Cruise",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 34.7,
-    "total_wait_records": 130
-  },
-  {
-    "ride_name": "The Many Adventures of Winnie the Pooh",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 31.4,
-    "total_wait_records": 142
-  },
-  {
-    "ride_name": "Alien Swirling Saucers",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 28.8,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "Meet Disney Stars at Red Carpet Dreams",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 28.3,
-    "total_wait_records": 130
-  },
-  {
-    "ride_name": "Meet Favorite Disney Pals at Adventurers Outpost",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 27.9,
-    "total_wait_records": 121
-  },
-  {
-    "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 24.7,
-    "total_wait_records": 136
-  },
-  {
-    "ride_name": "Meet Cinderella and a Visiting Princess at Princess Fairytale Hall",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 23.9,
-    "total_wait_records": 136
-  },
-  {
-    "ride_name": "Haunted Mansion",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 23.0,
-    "total_wait_records": 141
-  },
-  {
-    "ride_name": "Meet Ariel at Her Grotto",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 22.1,
-    "total_wait_records": 111
+    "avg_wait_minutes": 45.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Meet Beloved Disney Pals at Mickey & Friends",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 21.9,
-    "total_wait_records": 136
+    "avg_wait_minutes": 45.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Mickey & Minnie's Runaway Railway",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 45.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Soarin' Across America",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 42.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "The Twilight Zone\u2122 Tower of Terror",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 42.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Avatar Flight of Passage",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 40.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Alien Swirling Saucers",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 37.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Peter Pan's Flight",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 35.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Space Mountain",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 35.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Toy Story Mania!",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 35.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Jungle Cruise",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 32.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "The Many Adventures of Winnie the Pooh",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 32.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Tiana's Bayou Adventure",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 32.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Kali River Rapids",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Meet Disney Stars at Red Carpet Dreams",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Millennium Falcon: Smugglers Run",
+    "park_name": "Hollywood Studios",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Na'vi River Journey",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 30.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Meet Cinderella and a Visiting Princess at Princess Fairytale Hall",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 27.5,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Impressions de France",
     "park_name": "EPCOT",
-    "avg_wait_minutes": 20.7,
-    "total_wait_records": 21
-  },
-  {
-    "ride_name": "Walt Disney World Railroad - Fantasyland",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 19.4,
-    "total_wait_records": 129
-  },
-  {
-    "ride_name": "Walt Disney World Railroad - Main Street, U.S.A.",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 19.4,
-    "total_wait_records": 130
-  },
-  {
-    "ride_name": "Zootopia: Better Zoogether! - NEW!",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 18.8,
-    "total_wait_records": 88
-  },
-  {
-    "ride_name": "Meet Mickey at Town Square Theater",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 18.2,
-    "total_wait_records": 139
-  },
-  {
-    "ride_name": "Pirates of the Caribbean",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 17.8,
-    "total_wait_records": 139
-  },
-  {
-    "ride_name": "The Seas with Nemo & Friends",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 17.5,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "Spaceship Earth",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 17.3,
-    "total_wait_records": 140
-  },
-  {
-    "ride_name": "Mission: SPACE",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 16.4,
-    "total_wait_records": 144
+    "avg_wait_minutes": 25.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Astro Orbiter",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 16.0,
-    "total_wait_records": 144
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
   },
   {
-    "ride_name": "Living with the Land",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 15.7,
-    "total_wait_records": 138
+    "ride_name": "Haunted Mansion",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Under the Sea - Journey of The Little Mermaid",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Walt Disney World Railroad - Fantasyland",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Walt Disney World Railroad - Main Street, U.S.A.",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Meet Mickey at Town Square Theater",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 17.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Pirates of the Caribbean",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 17.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "The Magic Carpets of Aladdin",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 17.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Tomorrowland Transit Authority PeopleMover",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 17.5,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Canada Far and Wide in Circle-Vision 360",
     "park_name": "EPCOT",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 138
+    "total_wait_records": 2
   },
   {
     "ride_name": "Enchanted Tales with Belle",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 114
+    "total_wait_records": 1
   },
   {
-    "ride_name": "Meet Edna Mode at the Edna Mode Experience",
-    "park_name": "Hollywood Studios",
+    "ride_name": "Mission: SPACE",
+    "park_name": "EPCOT",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 77
+    "total_wait_records": 2
   },
   {
     "ride_name": "Reflections of China",
     "park_name": "EPCOT",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 104
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "The Barnstormer",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 15.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "The Hall of Presidents",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 120
+    "total_wait_records": 2
   },
   {
     "ride_name": "Turtle Talk With Crush",
     "park_name": "EPCOT",
     "avg_wait_minutes": 15.0,
-    "total_wait_records": 130
+    "total_wait_records": 2
   },
   {
-    "ride_name": "Beauty and the Beast Sing-Along",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 14.9,
-    "total_wait_records": 105
-  },
-  {
-    "ride_name": "Journey Into Imagination With Figment",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 14.8,
-    "total_wait_records": 123
-  },
-  {
-    "ride_name": "Under the Sea - Journey of The Little Mermaid",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 14.8,
-    "total_wait_records": 146
-  },
-  {
-    "ride_name": "The Magic Carpets of Aladdin",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 14.2,
-    "total_wait_records": 138
-  },
-  {
-    "ride_name": "The Barnstormer",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 12.8,
-    "total_wait_records": 137
+    "ride_name": "Zootopia: Better Zoogether! - NEW!",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 15.0,
+    "total_wait_records": 1
   },
   {
     "ride_name": "Mickey's PhilharMagic",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 12.4,
-    "total_wait_records": 139
-  },
-  {
-    "ride_name": "Meet Olaf at Celebrity Spotlight",
-    "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 11.6,
-    "total_wait_records": 108
-  },
-  {
-    "ride_name": "Tomorrowland Transit Authority PeopleMover",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 10.9,
-    "total_wait_records": 147
-  },
-  {
-    "ride_name": "Monsters Inc. Laugh Floor",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 10.3,
-    "total_wait_records": 136
-  },
-  {
-    "ride_name": "Gran Fiesta Tour Starring The Three Caballeros",
-    "park_name": "EPCOT",
-    "avg_wait_minutes": 10.2,
-    "total_wait_records": 130
-  },
-  {
-    "ride_name": "Dumbo the Flying Elephant",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 10.1,
-    "total_wait_records": 144
+    "avg_wait_minutes": 12.5,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Country Bear Musical Jamboree",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 10.0,
-    "total_wait_records": 140
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Dumbo the Flying Elephant",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Expedition Everest - Legend of the Forbidden Mountain",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Journey Into Imagination With Figment",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Kilimanjaro Safaris",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Monsters Inc. Laugh Floor",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Spaceship Earth",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Tomorrowland Speedway",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
     "park_name": "Hollywood Studios",
     "avg_wait_minutes": 10.0,
-    "total_wait_records": 132
-  },
-  {
-    "ride_name": "Tomorrowland Speedway",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 9.4,
-    "total_wait_records": 144
-  },
-  {
-    "ride_name": "\"it's a small world\"",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 8.8,
-    "total_wait_records": 144
-  },
-  {
-    "ride_name": "Mad Tea Party",
-    "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 8.7,
-    "total_wait_records": 147
+    "total_wait_records": 2
   },
   {
     "ride_name": "Prince Charming Regal Carrousel",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 8.6,
-    "total_wait_records": 75
+    "avg_wait_minutes": 7.5,
+    "total_wait_records": 2
   },
   {
-    "ride_name": "Walt Disney's Enchanted Tiki Room",
+    "ride_name": "The Seas with Nemo & Friends",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 7.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "\"it's a small world\"",
     "park_name": "Magic Kingdom",
-    "avg_wait_minutes": 7.8,
-    "total_wait_records": 139
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Gran Fiesta Tour Starring The Three Caballeros",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Living with the Land",
+    "park_name": "EPCOT",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Mad Tea Party",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Star Tours \u2013 The Adventures Continue",
     "park_name": "Hollywood Studios",
-    "avg_wait_minutes": 5.8,
-    "total_wait_records": 137
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
   },
   {
     "ride_name": "Swiss Family Treehouse",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 5.0,
-    "total_wait_records": 136
+    "total_wait_records": 2
   },
   {
     "ride_name": "Walt Disney's Carousel of Progress",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 5.0,
-    "total_wait_records": 147
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Walt Disney's Enchanted Tiki Room",
+    "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 5.0,
+    "total_wait_records": 2
   }
 ]
