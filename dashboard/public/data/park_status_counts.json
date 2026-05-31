@@ -2,12 +2,12 @@
   {
     "park_name": "Animal Kingdom",
     "status": "CLOSED",
-    "status_count": 2
+    "status_count": 3
   },
   {
     "park_name": "Animal Kingdom",
     "status": "OPERATING",
-    "status_count": 28
+    "status_count": 27
   },
   {
     "park_name": "Animal Kingdom",
@@ -22,12 +22,12 @@
   {
     "park_name": "EPCOT",
     "status": "DOWN",
-    "status_count": 2
+    "status_count": 1
   },
   {
     "park_name": "EPCOT",
     "status": "OPERATING",
-    "status_count": 50
+    "status_count": 51
   },
   {
     "park_name": "Hollywood Studios",
@@ -47,16 +47,16 @@
   {
     "park_name": "Magic Kingdom",
     "status": "CLOSED",
-    "status_count": 5
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "status": "DOWN",
     "status_count": 4
   },
   {
     "park_name": "Magic Kingdom",
+    "status": "DOWN",
+    "status_count": 3
+  },
+  {
+    "park_name": "Magic Kingdom",
     "status": "OPERATING",
-    "status_count": 44
+    "status_count": 46
   }
 ]
