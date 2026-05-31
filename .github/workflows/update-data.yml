@@ -53,7 +53,7 @@ jobs:
             python scripts/import_attraction_scores.py
           fi
 
-      - name: Collect latest wait times
+      - name: Collect latest wait times and export JSON
         run: |
           python scripts/collect_current_waits.py
 
@@ -62,22 +62,6 @@ jobs:
         with:
           path: data/disney_wait_times.db
           key: disney-wait-db-${{ github.run_id }}
-
-      - name: Commit updated JSON data to main
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          git pull --rebase origin main
-
-          git add dashboard/public/data/*.json
-
-          if git diff --cached --quiet; then
-            echo "No JSON changes to commit."
-          else
-            git commit -m "Update Disney wait time data"
-            git push
-          fi
 
       - name: Install dashboard dependencies
         working-directory: dashboard
