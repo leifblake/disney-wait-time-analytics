@@ -32,7 +32,7 @@
   {
     "hour": "22:00",
     "avg_wait_minutes": 26.6,
-    "total_wait_records": 64
+    "total_wait_records": 128
   },
   {
     "hour": "00:00",
