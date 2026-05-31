@@ -56,6 +56,13 @@
     "total_wait_records": 1
   },
   {
+    "ride_name": "Avatar Flight of Passage",
+    "park_name": "Animal Kingdom",
+    "hour": "11:00",
+    "avg_wait_minutes": 55.0,
+    "total_wait_records": 1
+  },
+  {
     "ride_name": "Big Thunder Mountain Railroad",
     "park_name": "Magic Kingdom",
     "hour": "00:00",
@@ -423,6 +430,13 @@
     "ride_name": "Monsters Inc. Laugh Floor",
     "park_name": "Magic Kingdom",
     "hour": "23:00",
+    "avg_wait_minutes": 10.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Na'vi River Journey",
+    "park_name": "Animal Kingdom",
+    "hour": "11:00",
     "avg_wait_minutes": 10.0,
     "total_wait_records": 1
   },
@@ -928,6 +942,13 @@
     "park_name": "Magic Kingdom",
     "hour": "23:00",
     "avg_wait_minutes": 5.0,
+    "total_wait_records": 1
+  },
+  {
+    "ride_name": "Zootopia: Better Zoogether! - NEW!",
+    "park_name": "Animal Kingdom",
+    "hour": "11:00",
+    "avg_wait_minutes": 10.0,
     "total_wait_records": 1
   },
   {

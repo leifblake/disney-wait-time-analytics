@@ -2,12 +2,17 @@
   {
     "park_name": "Animal Kingdom",
     "status": "CLOSED",
-    "status_count": 12
+    "status_count": 8
+  },
+  {
+    "park_name": "Animal Kingdom",
+    "status": "DOWN",
+    "status_count": 1
   },
   {
     "park_name": "Animal Kingdom",
     "status": "OPERATING",
-    "status_count": 18
+    "status_count": 21
   },
   {
     "park_name": "Animal Kingdom",

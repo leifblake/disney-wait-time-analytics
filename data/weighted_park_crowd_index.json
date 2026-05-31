@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "park_name": "Animal Kingdom",
+    "weighted_avg_wait_minutes": 25.0,
+    "tracked_headliner_count": 3,
+    "priority_weighted_wait": 28.8
+  }
+]

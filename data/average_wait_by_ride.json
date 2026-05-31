@@ -42,6 +42,12 @@
     "total_wait_records": 2
   },
   {
+    "ride_name": "Avatar Flight of Passage",
+    "park_name": "Animal Kingdom",
+    "avg_wait_minutes": 47.5,
+    "total_wait_records": 2
+  },
+  {
     "ride_name": "Slinky Dog Dash",
     "park_name": "Hollywood Studios",
     "avg_wait_minutes": 46.7,
@@ -70,12 +76,6 @@
     "park_name": "EPCOT",
     "avg_wait_minutes": 42.5,
     "total_wait_records": 2
-  },
-  {
-    "ride_name": "Avatar Flight of Passage",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 40.0,
-    "total_wait_records": 1
   },
   {
     "ride_name": "Star Wars: Rise of the Resistance",
@@ -138,12 +138,6 @@
     "total_wait_records": 1
   },
   {
-    "ride_name": "Na'vi River Journey",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 30.0,
-    "total_wait_records": 1
-  },
-  {
     "ride_name": "Meet Cinderella and a Visiting Princess at Princess Fairytale Hall",
     "park_name": "Magic Kingdom",
     "avg_wait_minutes": 27.5,
@@ -188,6 +182,12 @@
   {
     "ride_name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
     "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 20.0,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Na'vi River Journey",
+    "park_name": "Animal Kingdom",
     "avg_wait_minutes": 20.0,
     "total_wait_records": 2
   },
@@ -276,14 +276,14 @@
     "total_wait_records": 2
   },
   {
-    "ride_name": "Zootopia: Better Zoogether! - NEW!",
-    "park_name": "Animal Kingdom",
-    "avg_wait_minutes": 15.0,
-    "total_wait_records": 1
-  },
-  {
     "ride_name": "Mickey's PhilharMagic",
     "park_name": "Magic Kingdom",
+    "avg_wait_minutes": 12.5,
+    "total_wait_records": 2
+  },
+  {
+    "ride_name": "Zootopia: Better Zoogether! - NEW!",
+    "park_name": "Animal Kingdom",
     "avg_wait_minutes": 12.5,
     "total_wait_records": 2
   },
