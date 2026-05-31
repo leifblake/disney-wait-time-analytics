@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "ride_name": "Na'vi River Journey",
+    "park_name": "Animal Kingdom",
+    "current_wait_minutes": 10,
+    "typical_wait_minutes": 20.0,
+    "priority_score": 4,
+    "value_score": 8.0,
+    "percent_better_than_typical": 50.0
+  },
+  {
+    "ride_name": "Avatar Flight of Passage",
+    "park_name": "Animal Kingdom",
+    "current_wait_minutes": 55,
+    "typical_wait_minutes": 47.5,
+    "priority_score": 5,
+    "value_score": 4.32,
+    "percent_better_than_typical": -15.8
+  },
+  {
+    "ride_name": "Zootopia: Better Zoogether! - NEW!",
+    "park_name": "Animal Kingdom",
+    "current_wait_minutes": 10,
+    "typical_wait_minutes": 12.5,
+    "priority_score": 3,
+    "value_score": 3.75,
+    "percent_better_than_typical": 20.0
+  }
+]

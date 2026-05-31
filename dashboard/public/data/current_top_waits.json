@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "ride_name": "Avatar Flight of Passage",
+    "park_name": "Animal Kingdom",
+    "wait_minutes": 55,
+    "status": "OPERATING",
+    "observed_at": "2026-05-31T11:59:43.324661+00:00"
+  },
+  {
+    "ride_name": "Zootopia: Better Zoogether! - NEW!",
+    "park_name": "Animal Kingdom",
+    "wait_minutes": 10,
+    "status": "OPERATING",
+    "observed_at": "2026-05-31T11:59:43.324661+00:00"
+  },
+  {
+    "ride_name": "Na'vi River Journey",
+    "park_name": "Animal Kingdom",
+    "wait_minutes": 10,
+    "status": "OPERATING",
+    "observed_at": "2026-05-31T11:59:43.324661+00:00"
+  }
+]

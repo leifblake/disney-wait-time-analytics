@@ -1,6 +1,12 @@
 [
   {
     "park_name": "Animal Kingdom",
+    "hour": "11:00",
+    "avg_wait_minutes": 25.0,
+    "total_wait_records": 3
+  },
+  {
+    "park_name": "Animal Kingdom",
     "hour": "23:00",
     "avg_wait_minutes": 22.5,
     "total_wait_records": 6
