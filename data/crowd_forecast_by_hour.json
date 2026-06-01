@@ -1,67 +1,12 @@
 [
   {
-    "hour": "00:00",
-    "expected_wait_minutes": 26.2,
-    "total_wait_records": 58
-  },
-  {
-    "hour": "01:00",
-    "expected_wait_minutes": 16.6,
-    "total_wait_records": 34
-  },
-  {
-    "hour": "04:00",
-    "expected_wait_minutes": 17.2,
-    "total_wait_records": 9
-  },
-  {
-    "hour": "11:00",
-    "expected_wait_minutes": 25.0,
-    "total_wait_records": 3
-  },
-  {
-    "hour": "14:00",
-    "expected_wait_minutes": 27.5,
-    "total_wait_records": 61
-  },
-  {
-    "hour": "15:00",
-    "expected_wait_minutes": 32.3,
-    "total_wait_records": 131
-  },
-  {
-    "hour": "16:00",
-    "expected_wait_minutes": 32.6,
-    "total_wait_records": 64
-  },
-  {
-    "hour": "18:00",
-    "expected_wait_minutes": 32.2,
-    "total_wait_records": 65
-  },
-  {
-    "hour": "19:00",
-    "expected_wait_minutes": 32.2,
-    "total_wait_records": 65
-  },
-  {
-    "hour": "20:00",
-    "expected_wait_minutes": 28.4,
-    "total_wait_records": 68
-  },
-  {
-    "hour": "21:00",
-    "expected_wait_minutes": 26.1,
+    "hour": "17:00",
+    "expected_wait_minutes": 30.1,
     "total_wait_records": 70
   },
   {
-    "hour": "22:00",
-    "expected_wait_minutes": 26.6,
-    "total_wait_records": 128
-  },
-  {
-    "hour": "23:00",
-    "expected_wait_minutes": 26.8,
-    "total_wait_records": 126
+    "hour": "18:00",
+    "expected_wait_minutes": 29.9,
+    "total_wait_records": 70
   }
 ]

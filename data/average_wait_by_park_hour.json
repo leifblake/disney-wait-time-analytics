@@ -1,260 +1,50 @@
 [
   {
     "park_name": "Animal Kingdom",
-    "hour": "11:00",
-    "avg_wait_minutes": 25.0,
-    "total_wait_records": 3
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "14:00",
-    "avg_wait_minutes": 32.1,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "15:00",
-    "avg_wait_minutes": 38.0,
-    "total_wait_records": 15
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "16:00",
-    "avg_wait_minutes": 33.6,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "18:00",
-    "avg_wait_minutes": 30.7,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "19:00",
-    "avg_wait_minutes": 27.9,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "20:00",
-    "avg_wait_minutes": 23.6,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "21:00",
-    "avg_wait_minutes": 26.4,
-    "total_wait_records": 7
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "22:00",
-    "avg_wait_minutes": 14.5,
-    "total_wait_records": 10
-  },
-  {
-    "park_name": "Animal Kingdom",
-    "hour": "23:00",
-    "avg_wait_minutes": 22.5,
-    "total_wait_records": 6
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "00:00",
-    "avg_wait_minutes": 27.5,
-    "total_wait_records": 16
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "14:00",
-    "avg_wait_minutes": 31.0,
-    "total_wait_records": 15
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "15:00",
-    "avg_wait_minutes": 39.5,
-    "total_wait_records": 31
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "16:00",
-    "avg_wait_minutes": 35.3,
-    "total_wait_records": 15
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "18:00",
-    "avg_wait_minutes": 33.2,
-    "total_wait_records": 14
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "19:00",
-    "avg_wait_minutes": 40.3,
-    "total_wait_records": 15
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "20:00",
-    "avg_wait_minutes": 34.4,
-    "total_wait_records": 16
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "21:00",
-    "avg_wait_minutes": 31.6,
-    "total_wait_records": 16
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "22:00",
-    "avg_wait_minutes": 30.4,
-    "total_wait_records": 28
-  },
-  {
-    "park_name": "EPCOT",
-    "hour": "23:00",
-    "avg_wait_minutes": 32.1,
-    "total_wait_records": 31
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "00:00",
-    "avg_wait_minutes": 37.2,
+    "hour": "17:00",
+    "avg_wait_minutes": 33.9,
     "total_wait_records": 9
   },
   {
-    "park_name": "Hollywood Studios",
-    "hour": "01:00",
-    "avg_wait_minutes": 25.0,
-    "total_wait_records": 8
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "04:00",
-    "avg_wait_minutes": 17.2,
+    "park_name": "Animal Kingdom",
+    "hour": "18:00",
+    "avg_wait_minutes": 27.8,
     "total_wait_records": 9
   },
   {
-    "park_name": "Hollywood Studios",
-    "hour": "14:00",
-    "avg_wait_minutes": 39.4,
-    "total_wait_records": 9
+    "park_name": "EPCOT",
+    "hour": "17:00",
+    "avg_wait_minutes": 37.1,
+    "total_wait_records": 17
+  },
+  {
+    "park_name": "EPCOT",
+    "hour": "18:00",
+    "avg_wait_minutes": 37.4,
+    "total_wait_records": 17
   },
   {
     "park_name": "Hollywood Studios",
-    "hour": "15:00",
-    "avg_wait_minutes": 47.4,
-    "total_wait_records": 23
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "16:00",
-    "avg_wait_minutes": 44.1,
-    "total_wait_records": 11
+    "hour": "17:00",
+    "avg_wait_minutes": 43.3,
+    "total_wait_records": 12
   },
   {
     "park_name": "Hollywood Studios",
     "hour": "18:00",
-    "avg_wait_minutes": 51.7,
+    "avg_wait_minutes": 41.7,
     "total_wait_records": 12
   },
   {
-    "park_name": "Hollywood Studios",
-    "hour": "19:00",
-    "avg_wait_minutes": 40.8,
-    "total_wait_records": 12
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "20:00",
-    "avg_wait_minutes": 37.5,
-    "total_wait_records": 12
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "21:00",
-    "avg_wait_minutes": 34.6,
-    "total_wait_records": 12
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "22:00",
-    "avg_wait_minutes": 46.3,
-    "total_wait_records": 20
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "hour": "23:00",
-    "avg_wait_minutes": 35.7,
-    "total_wait_records": 22
-  },
-  {
     "park_name": "Magic Kingdom",
-    "hour": "00:00",
-    "avg_wait_minutes": 22.6,
-    "total_wait_records": 33
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "01:00",
-    "avg_wait_minutes": 14.0,
-    "total_wait_records": 26
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "14:00",
-    "avg_wait_minutes": 21.0,
-    "total_wait_records": 30
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "15:00",
-    "avg_wait_minutes": 21.6,
-    "total_wait_records": 62
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "16:00",
-    "avg_wait_minutes": 26.9,
-    "total_wait_records": 31
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "18:00",
-    "avg_wait_minutes": 24.8,
+    "hour": "17:00",
+    "avg_wait_minutes": 20.5,
     "total_wait_records": 32
   },
   {
     "park_name": "Magic Kingdom",
-    "hour": "19:00",
-    "avg_wait_minutes": 25.8,
-    "total_wait_records": 31
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "20:00",
-    "avg_wait_minutes": 23.1,
-    "total_wait_records": 33
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "21:00",
-    "avg_wait_minutes": 20.7,
-    "total_wait_records": 35
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "22:00",
-    "avg_wait_minutes": 21.3,
-    "total_wait_records": 70
-  },
-  {
-    "park_name": "Magic Kingdom",
-    "hour": "23:00",
-    "avg_wait_minutes": 21.9,
-    "total_wait_records": 67
+    "hour": "18:00",
+    "avg_wait_minutes": 22.2,
+    "total_wait_records": 32
   }
 ]
