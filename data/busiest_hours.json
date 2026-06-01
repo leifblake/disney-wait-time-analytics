@@ -1,13 +1,13 @@
 [
   {
-    "hour": "15:00",
-    "avg_wait_minutes": 34.1,
-    "total_wait_records": 62
-  },
-  {
     "hour": "16:00",
     "avg_wait_minutes": 32.6,
     "total_wait_records": 64
+  },
+  {
+    "hour": "15:00",
+    "avg_wait_minutes": 32.3,
+    "total_wait_records": 131
   },
   {
     "hour": "19:00",
