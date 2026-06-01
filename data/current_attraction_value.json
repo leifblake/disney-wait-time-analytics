@@ -1,281 +1,182 @@
 [
   {
-    "ride_name": "Pirates of the Caribbean",
+    "ride_name": "Jungle Cruise",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 5,
+    "typical_wait_minutes": 32.7,
+    "priority_score": 5,
+    "value_score": 32.7,
+    "percent_better_than_typical": 84.7
+  },
+  {
+    "ride_name": "Tiana's Bayou Adventure",
     "park_name": "Magic Kingdom",
     "current_wait_minutes": 10,
-    "typical_wait_minutes": 19.6,
+    "typical_wait_minutes": 48.5,
+    "priority_score": 4,
+    "value_score": 19.4,
+    "percent_better_than_typical": 79.4
+  },
+  {
+    "ride_name": "Pirates of the Caribbean",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 5,
+    "typical_wait_minutes": 18.5,
     "priority_score": 5,
-    "value_score": 9.8,
-    "percent_better_than_typical": 49.0
+    "value_score": 18.5,
+    "percent_better_than_typical": 73.0
+  },
+  {
+    "ride_name": "Space Mountain",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 15,
+    "typical_wait_minutes": 47.1,
+    "priority_score": 5,
+    "value_score": 15.7,
+    "percent_better_than_typical": 68.2
+  },
+  {
+    "ride_name": "Tomorrowland Transit Authority PeopleMover",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 5,
+    "typical_wait_minutes": 16.1,
+    "priority_score": 4,
+    "value_score": 12.88,
+    "percent_better_than_typical": 68.9
+  },
+  {
+    "ride_name": "The Many Adventures of Winnie the Pooh",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 10,
+    "typical_wait_minutes": 27.7,
+    "priority_score": 4,
+    "value_score": 11.08,
+    "percent_better_than_typical": 63.9
   },
   {
     "ride_name": "The Twilight Zone\u2122 Tower of Terror",
     "park_name": "Hollywood Studios",
-    "current_wait_minutes": 35,
-    "typical_wait_minutes": 51.9,
+    "current_wait_minutes": 25,
+    "typical_wait_minutes": 50.0,
     "priority_score": 5,
-    "value_score": 7.41,
+    "value_score": 10.0,
+    "percent_better_than_typical": 50.0
+  },
+  {
+    "ride_name": "Slinky Dog Dash",
+    "park_name": "Hollywood Studios",
+    "current_wait_minutes": 35,
+    "typical_wait_minutes": 69.6,
+    "priority_score": 5,
+    "value_score": 9.94,
+    "percent_better_than_typical": 49.7
+  },
+  {
+    "ride_name": "\"it's a small world\"",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 5,
+    "typical_wait_minutes": 11.5,
+    "priority_score": 4,
+    "value_score": 9.2,
+    "percent_better_than_typical": 56.5
+  },
+  {
+    "ride_name": "Millennium Falcon: Smugglers Run",
+    "park_name": "Hollywood Studios",
+    "current_wait_minutes": 15,
+    "typical_wait_minutes": 31.4,
+    "priority_score": 4,
+    "value_score": 8.37,
+    "percent_better_than_typical": 52.2
+  },
+  {
+    "ride_name": "Star Wars: Rise of the Resistance",
+    "park_name": "Hollywood Studios",
+    "current_wait_minutes": 35,
+    "typical_wait_minutes": 57.2,
+    "priority_score": 5,
+    "value_score": 8.17,
+    "percent_better_than_typical": 38.8
+  },
+  {
+    "ride_name": "Haunted Mansion",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 15,
+    "typical_wait_minutes": 24.4,
+    "priority_score": 5,
+    "value_score": 8.13,
+    "percent_better_than_typical": 38.5
+  },
+  {
+    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
+    "park_name": "Hollywood Studios",
+    "current_wait_minutes": 55,
+    "typical_wait_minutes": 85.4,
+    "priority_score": 5,
+    "value_score": 7.76,
+    "percent_better_than_typical": 35.6
+  },
+  {
+    "ride_name": "Big Thunder Mountain Railroad",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 25,
+    "typical_wait_minutes": 48.3,
+    "priority_score": 4,
+    "value_score": 7.73,
+    "percent_better_than_typical": 48.2
+  },
+  {
+    "ride_name": "Toy Story Mania!",
+    "park_name": "Hollywood Studios",
+    "current_wait_minutes": 25,
+    "typical_wait_minutes": 37.1,
+    "priority_score": 5,
+    "value_score": 7.42,
     "percent_better_than_typical": 32.6
   },
   {
-    "ride_name": "Star Tours \u2013 The Adventures Continue",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 5,
-    "typical_wait_minutes": 10.8,
+    "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
+    "park_name": "Magic Kingdom",
+    "current_wait_minutes": 20,
+    "typical_wait_minutes": 43.5,
     "priority_score": 3,
-    "value_score": 6.48,
-    "percent_better_than_typical": 53.7
+    "value_score": 6.52,
+    "percent_better_than_typical": 54.0
   },
   {
     "ride_name": "Seven Dwarfs Mine Train",
     "park_name": "Magic Kingdom",
     "current_wait_minutes": 40,
-    "typical_wait_minutes": 51.4,
+    "typical_wait_minutes": 50.4,
     "priority_score": 5,
-    "value_score": 6.42,
-    "percent_better_than_typical": 22.2
+    "value_score": 6.3,
+    "percent_better_than_typical": 20.6
   },
   {
-    "ride_name": "Toy Story Mania!",
+    "ride_name": "Star Tours \u2013 The Adventures Continue",
     "park_name": "Hollywood Studios",
-    "current_wait_minutes": 30,
-    "typical_wait_minutes": 38.1,
-    "priority_score": 5,
-    "value_score": 6.35,
-    "percent_better_than_typical": 21.3
-  },
-  {
-    "ride_name": "Rock \u2019n\u2019 Roller Coaster Starring The Muppets",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 70,
-    "typical_wait_minutes": 87.9,
-    "priority_score": 5,
-    "value_score": 6.28,
-    "percent_better_than_typical": 20.4
-  },
-  {
-    "ride_name": "Soarin' Across America",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 35,
-    "typical_wait_minutes": 50.8,
-    "priority_score": 4,
-    "value_score": 5.81,
-    "percent_better_than_typical": 31.1
-  },
-  {
-    "ride_name": "Meet Mickey at Town Square Theater",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 10,
-    "typical_wait_minutes": 17.9,
+    "current_wait_minutes": 5,
+    "typical_wait_minutes": 10.4,
     "priority_score": 3,
-    "value_score": 5.37,
-    "percent_better_than_typical": 44.1
-  },
-  {
-    "ride_name": "TRON Lightcycle / Run",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 65,
-    "typical_wait_minutes": 69.6,
-    "priority_score": 5,
-    "value_score": 5.35,
-    "percent_better_than_typical": 6.6
-  },
-  {
-    "ride_name": "Frozen Ever After",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 55,
-    "typical_wait_minutes": 57.9,
-    "priority_score": 5,
-    "value_score": 5.26,
-    "percent_better_than_typical": 5.0
-  },
-  {
-    "ride_name": "Millennium Falcon: Smugglers Run",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 25,
-    "typical_wait_minutes": 32.7,
-    "priority_score": 4,
-    "value_score": 5.23,
-    "percent_better_than_typical": 23.5
-  },
-  {
-    "ride_name": "Living with the Land",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 10,
-    "typical_wait_minutes": 12.9,
-    "priority_score": 4,
-    "value_score": 5.16,
-    "percent_better_than_typical": 22.5
-  },
-  {
-    "ride_name": "Haunted Mansion",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 25,
-    "typical_wait_minutes": 25.3,
-    "priority_score": 5,
-    "value_score": 5.06,
-    "percent_better_than_typical": 1.2
-  },
-  {
-    "ride_name": "Big Thunder Mountain Railroad",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 40,
-    "typical_wait_minutes": 50.5,
-    "priority_score": 4,
-    "value_score": 5.05,
-    "percent_better_than_typical": 20.8
-  },
-  {
-    "ride_name": "Jungle Cruise",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 35,
-    "typical_wait_minutes": 35.0,
-    "priority_score": 5,
-    "value_score": 5.0,
-    "percent_better_than_typical": 0.0
-  },
-  {
-    "ride_name": "Mickey & Minnie's Runaway Railway",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 45,
-    "typical_wait_minutes": 43.3,
-    "priority_score": 5,
-    "value_score": 4.81,
-    "percent_better_than_typical": -3.9
+    "value_score": 6.24,
+    "percent_better_than_typical": 51.9
   },
   {
     "ride_name": "Peter Pan's Flight",
     "park_name": "Magic Kingdom",
-    "current_wait_minutes": 45,
-    "typical_wait_minutes": 42.9,
+    "current_wait_minutes": 35,
+    "typical_wait_minutes": 42.3,
     "priority_score": 5,
-    "value_score": 4.77,
-    "percent_better_than_typical": -4.9
+    "value_score": 6.04,
+    "percent_better_than_typical": 17.3
   },
   {
-    "ride_name": "Space Mountain",
+    "ride_name": "TRON Lightcycle / Run",
     "park_name": "Magic Kingdom",
-    "current_wait_minutes": 55,
-    "typical_wait_minutes": 52.5,
+    "current_wait_minutes": 75,
+    "typical_wait_minutes": 70.0,
     "priority_score": 5,
-    "value_score": 4.77,
-    "percent_better_than_typical": -4.8
-  },
-  {
-    "ride_name": "Remy's Ratatouille Adventure",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 45,
-    "typical_wait_minutes": 53.3,
-    "priority_score": 4,
-    "value_score": 4.74,
-    "percent_better_than_typical": 15.6
-  },
-  {
-    "ride_name": "Test Track",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 85,
-    "typical_wait_minutes": 80.5,
-    "priority_score": 5,
-    "value_score": 4.74,
-    "percent_better_than_typical": -5.6
-  },
-  {
-    "ride_name": "The Many Adventures of Winnie the Pooh",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 25,
-    "typical_wait_minutes": 29.2,
-    "priority_score": 4,
     "value_score": 4.67,
-    "percent_better_than_typical": 14.4
-  },
-  {
-    "ride_name": "Tomorrowland Transit Authority PeopleMover",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 15,
-    "typical_wait_minutes": 17.5,
-    "priority_score": 4,
-    "value_score": 4.67,
-    "percent_better_than_typical": 14.3
-  },
-  {
-    "ride_name": "Star Wars: Rise of the Resistance",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 65,
-    "typical_wait_minutes": 60.0,
-    "priority_score": 5,
-    "value_score": 4.62,
-    "percent_better_than_typical": -8.3
-  },
-  {
-    "ride_name": "Guardians of the Galaxy: Cosmic Rewind",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 95,
-    "typical_wait_minutes": 87.5,
-    "priority_score": 5,
-    "value_score": 4.61,
-    "percent_better_than_typical": -8.6
-  },
-  {
-    "ride_name": "Tiana's Bayou Adventure",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 45,
-    "typical_wait_minutes": 51.7,
-    "priority_score": 4,
-    "value_score": 4.6,
-    "percent_better_than_typical": 13.0
-  },
-  {
-    "ride_name": "Slinky Dog Dash",
-    "park_name": "Hollywood Studios",
-    "current_wait_minutes": 85,
-    "typical_wait_minutes": 72.5,
-    "priority_score": 5,
-    "value_score": 4.26,
-    "percent_better_than_typical": -17.2
-  },
-  {
-    "ride_name": "Spaceship Earth",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 20,
-    "typical_wait_minutes": 18.1,
-    "priority_score": 4,
-    "value_score": 3.62,
-    "percent_better_than_typical": -10.5
-  },
-  {
-    "ride_name": "Meet Beloved Disney Pals at Mickey & Friends",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 20,
-    "typical_wait_minutes": 23.8,
-    "priority_score": 3,
-    "value_score": 3.57,
-    "percent_better_than_typical": 16.0
-  },
-  {
-    "ride_name": "Mission: SPACE",
-    "park_name": "EPCOT",
-    "current_wait_minutes": 15,
-    "typical_wait_minutes": 16.3,
-    "priority_score": 3,
-    "value_score": 3.26,
-    "percent_better_than_typical": 8.0
-  },
-  {
-    "ride_name": "\"it's a small world\"",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 15,
-    "typical_wait_minutes": 12.1,
-    "priority_score": 4,
-    "value_score": 3.23,
-    "percent_better_than_typical": -24.0
-  },
-  {
-    "ride_name": "Buzz Lightyear\u2019s Space Ranger Spin",
-    "park_name": "Magic Kingdom",
-    "current_wait_minutes": 60,
-    "typical_wait_minutes": 45.4,
-    "priority_score": 3,
-    "value_score": 2.27,
-    "percent_better_than_typical": -32.2
+    "percent_better_than_typical": -7.1
   }
 ]

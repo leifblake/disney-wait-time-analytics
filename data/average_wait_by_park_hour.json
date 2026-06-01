@@ -127,6 +127,12 @@
   },
   {
     "park_name": "Hollywood Studios",
+    "hour": "01:00",
+    "avg_wait_minutes": 25.0,
+    "total_wait_records": 8
+  },
+  {
+    "park_name": "Hollywood Studios",
     "hour": "04:00",
     "avg_wait_minutes": 17.2,
     "total_wait_records": 9
@@ -190,6 +196,12 @@
     "hour": "00:00",
     "avg_wait_minutes": 22.6,
     "total_wait_records": 33
+  },
+  {
+    "park_name": "Magic Kingdom",
+    "hour": "01:00",
+    "avg_wait_minutes": 14.0,
+    "total_wait_records": 26
   },
   {
     "park_name": "Magic Kingdom",

@@ -17,36 +17,36 @@
   {
     "park_name": "EPCOT",
     "status": "CLOSED",
-    "status_count": 6
-  },
-  {
-    "park_name": "EPCOT",
-    "status": "DOWN",
-    "status_count": 1
+    "status_count": 25
   },
   {
     "park_name": "EPCOT",
     "status": "OPERATING",
-    "status_count": 50
+    "status_count": 32
   },
   {
     "park_name": "Hollywood Studios",
-    "status": "CLOSED",
-    "status_count": 5
-  },
-  {
-    "park_name": "Hollywood Studios",
-    "status": "OPERATING",
-    "status_count": 26
-  },
-  {
-    "park_name": "Magic Kingdom",
     "status": "CLOSED",
     "status_count": 8
   },
   {
+    "park_name": "Hollywood Studios",
+    "status": "DOWN",
+    "status_count": 1
+  },
+  {
+    "park_name": "Hollywood Studios",
+    "status": "OPERATING",
+    "status_count": 22
+  },
+  {
+    "park_name": "Magic Kingdom",
+    "status": "CLOSED",
+    "status_count": 15
+  },
+  {
     "park_name": "Magic Kingdom",
     "status": "OPERATING",
-    "status_count": 45
+    "status_count": 38
   }
 ]
