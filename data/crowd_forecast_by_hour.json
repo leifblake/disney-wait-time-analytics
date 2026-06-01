@@ -8,5 +8,10 @@
     "hour": "18:00",
     "expected_wait_minutes": 29.9,
     "total_wait_records": 70
+  },
+  {
+    "hour": "20:00",
+    "expected_wait_minutes": 28.1,
+    "total_wait_records": 70
   }
 ]
