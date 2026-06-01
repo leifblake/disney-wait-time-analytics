@@ -16,6 +16,9 @@ jobs:
   update-data:
     runs-on: ubuntu-latest
 
+    env:
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -30,38 +33,20 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Restore SQLite database cache
-        uses: actions/cache/restore@v4
-        with:
-          path: data/disney_wait_times.db
-          key: disney-wait-db-${{ github.run_id }}
-          restore-keys: |
-            disney-wait-db-
-
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests psycopg2-binary
 
-      - name: Create database if missing
+      - name: Seed Supabase reference data
         run: |
-          mkdir -p data
-          if [ ! -f data/disney_wait_times.db ]; then
-            sqlite3 data/disney_wait_times.db < sql/schema.sql
-            python scripts/seed_parks.py
-            python scripts/import_rides.py
-            python scripts/import_attraction_scores.py
-          fi
+          python scripts/seed_parks.py
+          python scripts/import_rides.py
+          python scripts/import_attraction_scores.py
 
       - name: Collect latest wait times and export JSON
         run: |
           python scripts/collect_current_waits.py
-
-      - name: Save SQLite database cache
-        uses: actions/cache/save@v4
-        with:
-          path: data/disney_wait_times.db
-          key: disney-wait-db-${{ github.run_id }}
 
       - name: Install dashboard dependencies
         working-directory: dashboard

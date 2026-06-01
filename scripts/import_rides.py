@@ -1,7 +1,8 @@
-import sqlite3
+import os
+import psycopg2
 import requests
 
-DB_PATH = "data/disney_wait_times.db"
+DATABASE_URL = os.environ["SUPABASE_DB_URL"]
 
 WDW_RESORT_ID = "e957da41-3552-4cf6-b636-5babc5cbc4e5"
 
@@ -12,14 +13,16 @@ PARK_NAME_TO_ID = {
     "Disney's Animal Kingdom Theme Park": "ak"
 }
 
+
 def get_children(entity_id):
     url = f"https://api.themeparks.wiki/v1/entity/{entity_id}/children"
     response = requests.get(url, timeout=20)
     response.raise_for_status()
     return response.json()["children"]
 
+
 def main():
-    conn = sqlite3.connect(DB_PATH)
+    conn = psycopg2.connect(DATABASE_URL)
     cursor = conn.cursor()
 
     print("Fetching Walt Disney World parks...")
@@ -30,7 +33,7 @@ def main():
         if child.get("name") in PARK_NAME_TO_ID
     ]
 
-    total_inserted = 0
+    total_processed = 0
 
     for park in parks:
         park_name = park["name"]
@@ -55,9 +58,10 @@ def main():
 
             cursor.execute(
                 """
-                INSERT OR IGNORE INTO rides
+                INSERT INTO rides
                 (ride_id, park_id, ride_name, land, ride_type, is_active)
-                VALUES (?, ?, ?, ?, ?, ?)
+                VALUES (%s, %s, %s, %s, %s, %s)
+                ON CONFLICT (ride_id) DO NOTHING
                 """,
                 (
                     ride_id,
@@ -70,14 +74,16 @@ def main():
             )
 
             attraction_count += 1
-            total_inserted += 1
+            total_processed += 1
 
         print(f"  Added/found {attraction_count} attractions/shows.")
 
     conn.commit()
+    cursor.close()
     conn.close()
 
-    print(f"\nImport complete. Processed {total_inserted} attractions/shows.")
+    print(f"\nImport complete. Processed {total_processed} attractions/shows.")
+
 
 if __name__ == "__main__":
     main()

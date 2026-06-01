@@ -1,10 +1,10 @@
-import sqlite3
+import os
 from datetime import datetime, timezone
 import requests
 import subprocess
+import psycopg2
 
-DB_PATH = "data/disney_wait_times.db"
-VIEWS_PATH = "sql/views.sql"
+DATABASE_URL = os.environ["SUPABASE_DB_URL"]
 
 WDW_RESORT_ID = "e957da41-3552-4cf6-b636-5babc5cbc4e5"
 
@@ -30,24 +30,16 @@ def get_live_data(entity_id):
     return response.json()["liveData"]
 
 
-def rebuild_views():
-    with sqlite3.connect(DB_PATH) as conn:
-        with open(VIEWS_PATH, "r") as file:
-            conn.executescript(file.read())
-
-    print("SQL views rebuilt.")
-
-
 def export_json():
     subprocess.run(["python3", "scripts/export_json.py"], check=True)
     print("JSON files exported.")
 
 
 def main():
-    conn = sqlite3.connect(DB_PATH)
+    conn = psycopg2.connect(DATABASE_URL)
     cursor = conn.cursor()
 
-    observed_at = datetime.now(timezone.utc).isoformat()
+    observed_at = datetime.now(timezone.utc)
     inserted = 0
     skipped = 0
 
@@ -81,7 +73,7 @@ def main():
                 continue
 
             cursor.execute(
-                "SELECT ride_id FROM rides WHERE ride_id = ?",
+                "SELECT ride_id FROM rides WHERE ride_id = %s",
                 (ride_id,)
             )
 
@@ -95,7 +87,7 @@ def main():
                 """
                 INSERT INTO wait_times
                 (ride_id, park_id, observed_at, wait_minutes, status, source)
-                VALUES (?, ?, ?, ?, ?, ?)
+                VALUES (%s, %s, %s, %s, %s, %s)
                 """,
                 (
                     ride_id,
@@ -110,14 +102,14 @@ def main():
             inserted += 1
 
     conn.commit()
+    cursor.close()
     conn.close()
 
     print("\nCollection complete.")
     print(f"Inserted rows: {inserted}")
     print(f"Skipped rows: {skipped}")
-    print(f"Observed at: {observed_at}")
+    print(f"Observed at: {observed_at.isoformat()}")
 
-    rebuild_views()
     export_json()
 
 

@@ -1,7 +1,8 @@
-import sqlite3
+import os
 import re
+import psycopg2
 
-DB_PATH = "data/disney_wait_times.db"
+DATABASE_URL = os.environ["SUPABASE_DB_URL"]
 SCORES_PATH = "data/manual/attraction_scores.txt"
 
 
@@ -25,22 +26,8 @@ def parse_line(line):
 
 
 def main():
-    conn = sqlite3.connect(DB_PATH)
+    conn = psycopg2.connect(DATABASE_URL)
     cursor = conn.cursor()
-
-    cursor.execute("DROP TABLE IF EXISTS attraction_scores")
-
-    cursor.execute("""
-        CREATE TABLE attraction_scores (
-            ride_id TEXT PRIMARY KEY,
-            park_id TEXT NOT NULL,
-            ride_name TEXT NOT NULL,
-            park_name TEXT NOT NULL,
-            priority_score INTEGER NOT NULL CHECK(priority_score BETWEEN 1 AND 5),
-            FOREIGN KEY (ride_id) REFERENCES rides(ride_id),
-            FOREIGN KEY (park_id) REFERENCES parks(park_id)
-        )
-    """)
 
     inserted = 0
     skipped = 0
@@ -57,11 +44,11 @@ def main():
 
             cursor.execute(
                 """
-                SELECT rides.ride_id, rides.park_id
+                SELECT rides.ride_name, parks.park_name
                 FROM rides
                 JOIN parks ON rides.park_id = parks.park_id
-                WHERE rides.ride_name = ?
-                  AND parks.park_name = ?
+                WHERE rides.ride_name = %s
+                  AND parks.park_name = %s
                 """,
                 (ride_name, park_name)
             )
@@ -73,24 +60,25 @@ def main():
                 skipped += 1
                 continue
 
-            ride_id, park_id = match
-
             cursor.execute(
                 """
-                INSERT OR REPLACE INTO attraction_scores
-                (ride_id, park_id, ride_name, park_name, priority_score)
-                VALUES (?, ?, ?, ?, ?)
+                INSERT INTO attraction_scores
+                (park_name, ride_name, priority_score)
+                VALUES (%s, %s, %s)
+                ON CONFLICT (park_name, ride_name)
+                DO UPDATE SET priority_score = EXCLUDED.priority_score
                 """,
-                (ride_id, park_id, ride_name, park_name, score)
+                (park_name, ride_name, score)
             )
 
             inserted += 1
 
     conn.commit()
+    cursor.close()
     conn.close()
 
     print("Attraction scores imported.")
-    print(f"Inserted: {inserted}")
+    print(f"Inserted/updated: {inserted}")
     print(f"Skipped: {skipped}")
 
 
