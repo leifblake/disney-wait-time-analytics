@@ -15,8 +15,6 @@ import {
   Line
 } from "recharts";
 
-const DATA_BASE = `${import.meta.env.BASE_URL}data/`;
-
 const PARK_COLORS = {
   "Magic Kingdom": "#7b61ff",
   EPCOT: "#00a6d6",
@@ -71,53 +69,71 @@ function App() {
   const [selectedRide, setSelectedRide] = useState("All Rides");
 
   useEffect(() => {
-    supabase
-      .from("current_top_waits")
-      .select("*")
-      .then(({ data, error }) => {
-        if (error) {
-          console.error("Supabase current_top_waits error:", error);
-          return;
-        }
+    async function loadDashboardData() {
+      try {
+        const [
+          topWaitsResult,
+          parkAveragesResult,
+          rideAveragesResult,
+          rideHourAveragesResult,
+          parkHourAveragesResult,
+          statusCountsResult,
+          hourlyAveragesResult,
+          crowdForecastResult,
+          attractionValuesResult,
+          weightedParkCrowdsResult
+        ] = await Promise.all([
+          supabase.from("current_top_waits").select("*"),
+          supabase.from("average_wait_by_park").select("*"),
+          supabase.from("average_wait_by_ride").select("*"),
+          supabase.from("average_wait_by_ride_hour").select("*"),
+          supabase.from("average_wait_by_park_hour").select("*"),
+          supabase.from("park_status_counts").select("*"),
+          supabase.from("average_wait_by_hour").select("*"),
+          supabase.from("crowd_forecast_by_hour").select("*"),
+          supabase.from("current_attraction_value").select("*"),
+          supabase.from("weighted_park_crowd_index").select("*")
+        ]);
 
-        setTopWaits(data || []);
-      });
+        const results = [
+          ["current_top_waits", topWaitsResult],
+          ["average_wait_by_park", parkAveragesResult],
+          ["average_wait_by_ride", rideAveragesResult],
+          ["average_wait_by_ride_hour", rideHourAveragesResult],
+          ["average_wait_by_park_hour", parkHourAveragesResult],
+          ["park_status_counts", statusCountsResult],
+          ["average_wait_by_hour", hourlyAveragesResult],
+          ["crowd_forecast_by_hour", crowdForecastResult],
+          ["current_attraction_value", attractionValuesResult],
+          ["weighted_park_crowd_index", weightedParkCrowdsResult]
+        ];
 
-    fetch(`${DATA_BASE}average_wait_by_park.json`)
-      .then((res) => res.json())
-      .then(setParkAverages);
+        results.forEach(([name, result]) => {
+          if (result.error) {
+            console.error(`Supabase ${name} error:`, result.error);
+          }
+        });
 
-    fetch(`${DATA_BASE}average_wait_by_ride.json`)
-      .then((res) => res.json())
-      .then(setRideAverages);
+        setTopWaits(topWaitsResult.data || []);
+        setParkAverages(parkAveragesResult.data || []);
+        setRideAverages(rideAveragesResult.data || []);
+        setRideHourAverages(rideHourAveragesResult.data || []);
+        setParkHourAverages(parkHourAveragesResult.data || []);
+        setStatusCounts(statusCountsResult.data || []);
+        setHourlyAverages(hourlyAveragesResult.data || []);
+        setCrowdForecast(crowdForecastResult.data || []);
+        setAttractionValues(attractionValuesResult.data || []);
+        setWeightedParkCrowds(weightedParkCrowdsResult.data || []);
+      } catch (err) {
+        console.error("Dashboard load error:", err);
+      }
+    }
 
-    fetch(`${DATA_BASE}average_wait_by_ride_hour.json`)
-      .then((res) => res.json())
-      .then(setRideHourAverages);
+    loadDashboardData();
 
-    fetch(`${DATA_BASE}average_wait_by_park_hour.json`)
-      .then((res) => res.json())
-      .then(setParkHourAverages);
+    const interval = setInterval(loadDashboardData, 15 * 60 * 1000);
 
-    fetch(`${DATA_BASE}park_status_counts.json`)
-      .then((res) => res.json())
-      .then(setStatusCounts);
-
-    fetch(`${DATA_BASE}average_wait_by_hour.json`)
-      .then((res) => res.json())
-      .then(setHourlyAverages);
-
-    fetch(`${DATA_BASE}crowd_forecast_by_hour.json`)
-      .then((res) => res.json())
-      .then(setCrowdForecast);
-
-    fetch(`${DATA_BASE}current_attraction_value.json`)
-      .then((res) => res.json())
-      .then(setAttractionValues);
-
-    fetch(`${DATA_BASE}weighted_park_crowd_index.json`)
-      .then((res) => res.json())
-      .then(setWeightedParkCrowds);
+    return () => clearInterval(interval);
   }, []);
 
   const availableRides = useMemo(() => {
@@ -914,9 +930,8 @@ function App() {
             <div className="methodology-item">
               <h3>Collection Frequency</h3>
               <p>
-                A Python data collection pipeline records attraction wait times
-                every 15 minutes, creating a continuously growing historical
-                dataset.
+                A Render Cron Job records attraction wait times every 15
+                minutes, creating a continuously growing historical dataset.
               </p>
             </div>
 
@@ -932,9 +947,9 @@ function App() {
             <div className="methodology-item">
               <h3>Analysis Pipeline</h3>
               <p>
-                PostgreSQL views and Python queries calculate park averages,
-                ride averages, hourly patterns, operating status summaries, and
-                best-time-to-ride metrics from the underlying dataset.
+                PostgreSQL views calculate park averages, ride averages, hourly
+                patterns, operating status summaries, and best-time-to-ride
+                metrics from the underlying dataset.
               </p>
             </div>
 
