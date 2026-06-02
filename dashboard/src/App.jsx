@@ -36,6 +36,31 @@ const PARK_ORDER = [
   "Animal Kingdom"
 ];
 
+const tooltipStyle = {
+  backgroundColor: "#050b16",
+  border: "1px solid #334766",
+  color: "#ffffff",
+  borderRadius: "10px"
+};
+
+const tooltipLabelStyle = {
+  color: "#ffffff"
+};
+
+const tooltipItemStyle = {
+  color: "#ffffff"
+};
+
+function ChartTooltip() {
+  return (
+    <Tooltip
+      contentStyle={tooltipStyle}
+      labelStyle={tooltipLabelStyle}
+      itemStyle={tooltipItemStyle}
+    />
+  );
+}
+
 function getHeatmapColor(value, maxValue) {
   if (value === null || value === undefined) {
     return "rgba(255, 255, 255, 0.045)";
@@ -381,7 +406,7 @@ function App() {
       <header className="dashboard-header">
         <p className="eyebrow">Walt Disney World Data Dashboard</p>
         <h1>Disney Wait Time Analytics</h1>
-        <p>
+        <p className="dashboard-subtitle">
           A live analytics dashboard tracking attraction wait times and operating
           status across Magic Kingdom, EPCOT, Hollywood Studios, and Animal
           Kingdom.
@@ -534,7 +559,7 @@ function App() {
             <ResponsiveContainer>
               <BarChart
                 data={filteredTopWaits.slice(0, 10)}
-                margin={{ top: 16, right: 20, left: 0, bottom: 70 }}
+                margin={{ top: 16, right: 24, left: 8, bottom: 90 }}
               >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                 <XAxis
@@ -542,11 +567,11 @@ function App() {
                   angle={-35}
                   textAnchor="end"
                   interval={0}
-                  height={90}
+                  height={105}
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
                 <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                <Tooltip />
+                <ChartTooltip />
                 <Bar dataKey="wait_minutes" radius={[10, 10, 0, 0]}>
                   {filteredTopWaits.slice(0, 10).map((entry) => (
                     <Cell
@@ -568,16 +593,21 @@ function App() {
             </div>
           </div>
 
-          <div className="chart-container">
+          <div className="chart-container park-chart-container">
             <ResponsiveContainer>
-              <BarChart data={filteredParkAverages}>
+              <BarChart
+                data={filteredParkAverages}
+                margin={{ top: 16, right: 24, left: 8, bottom: 60 }}
+              >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                 <XAxis
                   dataKey="park_name"
+                  interval={0}
+                  height={70}
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
                 <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                <Tooltip />
+                <ChartTooltip />
                 <Bar dataKey="avg_wait_minutes" radius={[10, 10, 0, 0]}>
                   {filteredParkAverages.map((entry) => (
                     <Cell
@@ -599,16 +629,21 @@ function App() {
             </div>
           </div>
 
-          <div className="chart-container">
+          <div className="chart-container park-chart-container">
             <ResponsiveContainer>
-              <BarChart data={statusByPark}>
+              <BarChart
+                data={statusByPark}
+                margin={{ top: 16, right: 24, left: 8, bottom: 60 }}
+              >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                 <XAxis
                   dataKey="park_name"
+                  interval={0}
+                  height={70}
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
                 <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                <Tooltip />
+                <ChartTooltip />
                 <Bar
                   dataKey="OPERATING"
                   stackId="status"
@@ -722,7 +757,7 @@ function App() {
               <ResponsiveContainer>
                 <LineChart
                   data={selectedRideHourlyData}
-                  margin={{ top: 16, right: 24, left: 0, bottom: 30 }}
+                  margin={{ top: 16, right: 24, left: 8, bottom: 40 }}
                 >
                   <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                   <XAxis
@@ -730,7 +765,7 @@ function App() {
                     tick={{ fill: "#b8c3d9", fontSize: 11 }}
                   />
                   <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                  <Tooltip />
+                  <ChartTooltip />
                   <Line
                     type="monotone"
                     dataKey="avg_wait_minutes"
@@ -755,18 +790,21 @@ function App() {
 
           <div className="chart-container">
             <ResponsiveContainer>
-              <BarChart data={filteredRideAverages.slice(0, 12)}>
+              <BarChart
+                data={filteredRideAverages.slice(0, 12)}
+                margin={{ top: 16, right: 24, left: 8, bottom: 105 }}
+              >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                 <XAxis
                   dataKey="ride_name"
                   angle={-35}
                   textAnchor="end"
                   interval={0}
-                  height={100}
+                  height={120}
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
                 <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                <Tooltip />
+                <ChartTooltip />
                 <Bar dataKey="avg_wait_minutes" radius={[10, 10, 0, 0]}>
                   {filteredRideAverages.slice(0, 12).map((entry) => (
                     <Cell
@@ -790,14 +828,17 @@ function App() {
 
           <div className="chart-container">
             <ResponsiveContainer>
-              <LineChart data={hourlyAverages}>
+              <LineChart
+                data={hourlyAverages}
+                margin={{ top: 16, right: 24, left: 8, bottom: 40 }}
+              >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
                 <XAxis
                   dataKey="hour"
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
                 <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
-                <Tooltip />
+                <ChartTooltip />
                 <Line
                   type="monotone"
                   dataKey="avg_wait_minutes"
@@ -921,54 +962,54 @@ function App() {
             <div className="methodology-item">
               <h3>Data Source</h3>
               <p>
-                Attraction wait times and operating status are collected from
-                the ThemeParks.wiki API, which aggregates live Walt Disney World
-                attraction data.
+                Live attraction wait times and operating statuses are collected
+                from the ThemeParks.wiki API, which provides real-time Walt
+                Disney World attraction data.
               </p>
             </div>
 
             <div className="methodology-item">
-              <h3>Collection Frequency</h3>
+              <h3>Backend Automation</h3>
               <p>
-                A Render Cron Job records attraction wait times every 15
-                minutes, creating a continuously growing historical dataset.
+                A Render Cron Job runs every 15 minutes to collect new
+                wait-time observations without relying on a local laptop or
+                GitHub Actions.
               </p>
             </div>
 
             <div className="methodology-item">
               <h3>Database</h3>
               <p>
-                All observations are stored in a Supabase PostgreSQL database
-                containing parks, rides, attraction status information, and
-                historical wait-time records.
+                Parks, rides, attraction priority scores, and historical
+                wait-time records are stored in Supabase PostgreSQL as a
+                persistent cloud database.
               </p>
             </div>
 
             <div className="methodology-item">
               <h3>Analysis Pipeline</h3>
               <p>
-                PostgreSQL views calculate park averages, ride averages, hourly
-                patterns, operating status summaries, and best-time-to-ride
-                metrics from the underlying dataset.
+                PostgreSQL views calculate current waits, park averages, ride
+                averages, hourly patterns, operating status summaries,
+                attraction value, and crowd-index metrics.
               </p>
             </div>
 
             <div className="methodology-item">
-              <h3>Visualization</h3>
+              <h3>Frontend</h3>
               <p>
-                The dashboard is built with React and Recharts, allowing users
-                to explore wait-time trends through interactive charts, filters,
-                and heatmaps.
+                The React dashboard reads directly from Supabase and refreshes
+                its data every 15 minutes, allowing the live website to update
+                without being redeployed.
               </p>
             </div>
 
             <div className="methodology-item">
               <h3>Project Goal</h3>
               <p>
-                The objective is to identify crowd patterns, discover the best
-                times to ride attractions, compare park demand throughout the
-                day, and demonstrate modern data analytics workflows using SQL,
-                Python, React, and data visualization techniques.
+                This project demonstrates a full-stack data analytics workflow
+                using Python, SQL, Supabase, Render, React, Recharts, and
+                responsive data visualization.
               </p>
             </div>
           </div>
@@ -979,6 +1020,65 @@ function App() {
             trends, ride forecasts, and crowd-pattern analysis improve as the
             dataset grows.
           </div>
+        </div>
+      </section>
+
+      <section className="developer-card">
+        <div className="chart-header">
+          <div>
+            <p className="chart-kicker">About the Developer</p>
+            <h2>Built by Leif Blake</h2>
+          </div>
+        </div>
+
+        <div className="developer-content">
+          <img
+            className="developer-photo"
+            src={`${import.meta.env.BASE_URL}leif1.jpg`}
+            alt="Leif Blake"
+          />
+
+          <div className="developer-copy">
+            <p>
+              Hi, I’m Leif Blake, a web developer and data visualization
+              designer with a Bachelor of Science in Computer Graphics
+              Technology from Purdue University, focused on Web Programming and
+              Design.
+            </p>
+
+            <p>
+              This project combines my interests in frontend development, data
+              analytics, and theme park operations. My Disney College Program
+              experience at Walt Disney World (shoutout to Sonny Eclipse and
+              Cosmic Ray's Starlight Cafe in Magic Kingdom!) helped inspire this
+              dashboard and gave me a firsthand look at how guest flow, wait
+              times, and operations shape the park experience.
+            </p>
+
+            <div className="developer-links">
+              <a
+                href="https://www.linkedin.com/in/leifblake/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://ko-fi.com/leifblake"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Buy Me a Coffee
+              </a>
+            </div>
+          </div>
+
+          <img
+            className="developer-photo"
+            src={`${import.meta.env.BASE_URL}leif2.jpg`}
+            alt="Leif Blake at Walt Disney World"
+          />
         </div>
       </section>
     </main>
