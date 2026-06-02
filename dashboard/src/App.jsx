@@ -90,6 +90,7 @@ function App() {
   const [crowdForecast, setCrowdForecast] = useState([]);
   const [attractionValues, setAttractionValues] = useState([]);
   const [weightedParkCrowds, setWeightedParkCrowds] = useState([]);
+  const [latestSnapshot, setLatestSnapshot] = useState(null);
   const [selectedPark, setSelectedPark] = useState("All Parks");
   const [selectedRide, setSelectedRide] = useState("All Rides");
 
@@ -106,7 +107,8 @@ function App() {
           hourlyAveragesResult,
           crowdForecastResult,
           attractionValuesResult,
-          weightedParkCrowdsResult
+          weightedParkCrowdsResult,
+          latestSnapshotResult
         ] = await Promise.all([
           supabase.from("current_top_waits").select("*"),
           supabase.from("average_wait_by_park").select("*"),
@@ -117,7 +119,8 @@ function App() {
           supabase.from("average_wait_by_hour").select("*"),
           supabase.from("crowd_forecast_by_hour").select("*"),
           supabase.from("current_attraction_value").select("*"),
-          supabase.from("weighted_park_crowd_index").select("*")
+          supabase.from("weighted_park_crowd_index").select("*"),
+          supabase.from("latest_snapshot_info").select("*").single()
         ]);
 
         const results = [
@@ -130,7 +133,8 @@ function App() {
           ["average_wait_by_hour", hourlyAveragesResult],
           ["crowd_forecast_by_hour", crowdForecastResult],
           ["current_attraction_value", attractionValuesResult],
-          ["weighted_park_crowd_index", weightedParkCrowdsResult]
+          ["weighted_park_crowd_index", weightedParkCrowdsResult],
+          ["latest_snapshot_info", latestSnapshotResult]
         ];
 
         results.forEach(([name, result]) => {
@@ -149,6 +153,7 @@ function App() {
         setCrowdForecast(crowdForecastResult.data || []);
         setAttractionValues(attractionValuesResult.data || []);
         setWeightedParkCrowds(weightedParkCrowdsResult.data || []);
+        setLatestSnapshot(latestSnapshotResult.data || null);
       } catch (err) {
         console.error("Dashboard load error:", err);
       }
@@ -218,8 +223,8 @@ function App() {
     .filter((item) => item.status === "DOWN")
     .reduce((sum, item) => sum + item.status_count, 0);
 
-  const lastUpdated = topWaits[0]
-    ? new Date(topWaits[0].observed_at).toLocaleString([], {
+  const lastUpdated = latestSnapshot?.observed_at
+    ? new Date(latestSnapshot.observed_at).toLocaleString([], {
         month: "short",
         day: "numeric",
         hour: "numeric",
