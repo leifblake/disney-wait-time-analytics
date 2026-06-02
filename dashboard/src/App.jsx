@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
+import { supabase } from "./supabaseClient";
 
 import {
   BarChart,
@@ -70,9 +71,17 @@ function App() {
   const [selectedRide, setSelectedRide] = useState("All Rides");
 
   useEffect(() => {
-    fetch(`${DATA_BASE}current_top_waits.json`)
-      .then((res) => res.json())
-      .then(setTopWaits);
+    supabase
+      .from("current_top_waits")
+      .select("*")
+      .then(({ data, error }) => {
+        if (error) {
+          console.error("Supabase current_top_waits error:", error);
+          return;
+        }
+
+        setTopWaits(data || []);
+      });
 
     fetch(`${DATA_BASE}average_wait_by_park.json`)
       .then((res) => res.json())
@@ -914,18 +923,18 @@ function App() {
             <div className="methodology-item">
               <h3>Database</h3>
               <p>
-                All observations are stored in a SQLite database containing
-                parks, rides, attraction status information, and historical
-                wait-time records.
+                All observations are stored in a Supabase PostgreSQL database
+                containing parks, rides, attraction status information, and
+                historical wait-time records.
               </p>
             </div>
 
             <div className="methodology-item">
               <h3>Analysis Pipeline</h3>
               <p>
-                SQL views calculate park averages, ride averages, hourly
-                patterns, operating status summaries, and best-time-to-ride
-                metrics from the underlying dataset.
+                PostgreSQL views and Python queries calculate park averages,
+                ride averages, hourly patterns, operating status summaries, and
+                best-time-to-ride metrics from the underlying dataset.
               </p>
             </div>
 
