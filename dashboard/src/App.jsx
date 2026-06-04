@@ -508,12 +508,22 @@ function App() {
   }, [parkHourAverages, selectedPark]);
 
   function getHeatmapValue(parkName, hour) {
-    const match = parkHourAverages.find(
-      (item) => item.park_name === parkName && item.hour === hour
-    );
+  const hours = PARK_HOURS[parkName];
 
-    return match ? match.avg_wait_minutes : null;
+  if (hours) {
+    const hourNum = Number(hour.split(":")[0]);
+
+    if (hourNum < hours.open || hourNum >= hours.close) {
+      return null;
+    }
   }
+
+  const match = parkHourAverages.find(
+    (item) => item.park_name === parkName && item.hour === hour
+  );
+
+  return match ? match.avg_wait_minutes : null;
+}
 
   function handleParkChange(event) {
     setSelectedPark(event.target.value);
