@@ -761,3 +761,25 @@ tbody tr:hover {
     height: auto;
   }
 }
+
+/* =========================
+   RIDE AVERAGE CHART FIX
+========================= */
+
+.ride-average-chart-container {
+  width: 100%;
+  min-height: 390px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 850px) {
+  .ride-average-chart-container {
+    justify-content: flex-start;
+  }
+}

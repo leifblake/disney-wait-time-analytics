@@ -79,6 +79,37 @@ function getHourOffset(hourString, offset) {
   return `${String(nextHour).padStart(2, "0")}:00`;
 }
 
+function getDynamicYAxisConfig(data, dataKey) {
+  const values = data
+    .map((item) => Number(item[dataKey]))
+    .filter((value) => Number.isFinite(value));
+
+  if (values.length === 0) {
+    return {
+      domain: [0, 50],
+      ticks: [0, 10, 20, 30, 40, 50]
+    };
+  }
+
+  const maxValue = Math.max(...values);
+  const axisMax = Math.max(30, Math.ceil((maxValue * 1.15) / 10) * 10);
+  const tickStep = Math.max(5, Math.ceil(axisMax / 5 / 5) * 5);
+  const ticks = [];
+
+  for (let value = 0; value <= axisMax; value += tickStep) {
+    ticks.push(value);
+  }
+
+  if (ticks[ticks.length - 1] !== axisMax) {
+    ticks.push(axisMax);
+  }
+
+  return {
+    domain: [0, axisMax],
+    ticks
+  };
+}
+
 function App() {
   const [topWaits, setTopWaits] = useState([]);
   const [parkAverages, setParkAverages] = useState([]);
@@ -194,6 +225,12 @@ function App() {
 
     return parkMatch && rideMatch;
   });
+
+  const rideAverageChartData = filteredRideAverages.slice(0, 12);
+
+  const rideAverageYAxis = useMemo(() => {
+    return getDynamicYAxisConfig(rideAverageChartData, "avg_wait_minutes");
+  }, [rideAverageChartData]);
 
   const filteredStatusCounts =
     selectedPark === "All Parks"
@@ -786,17 +823,17 @@ function App() {
         </article>
 
         <article className="chart-card wide-chart">
-          <div className="chart-header">
-            <div>
-              <p className="chart-kicker">Ride-Level Pattern</p>
-              <h2>Average Wait by Ride</h2>
+            <div className="chart-header">
+              <div>
+                <p className="chart-kicker">Ride-Level Pattern</p>
+                <h2>Average Wait by Ride</h2>
+              </div>
             </div>
-          </div>
 
-          <div className="chart-container">
-            <ResponsiveContainer>
+            <div className="chart-container ride-average-chart-container">
+            <ResponsiveContainer width="100%" height="100%">
               <BarChart
-                data={filteredRideAverages.slice(0, 12)}
+                data={rideAverageChartData}
                 margin={{ top: 16, right: 24, left: 8, bottom: 105 }}
               >
                 <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
@@ -808,10 +845,15 @@ function App() {
                   height={120}
                   tick={{ fill: "#b8c3d9", fontSize: 11 }}
                 />
-                <YAxis tick={{ fill: "#b8c3d9", fontSize: 12 }} />
+                <YAxis
+                  domain={rideAverageYAxis.domain}
+                  ticks={rideAverageYAxis.ticks}
+                  allowDataOverflow={false}
+                  tick={{ fill: "#b8c3d9", fontSize: 12 }}
+                />
                 <ChartTooltip />
                 <Bar dataKey="avg_wait_minutes" radius={[10, 10, 0, 0]}>
-                  {filteredRideAverages.slice(0, 12).map((entry) => (
+                  {rideAverageChartData.map((entry) => (
                     <Cell
                       key={`${entry.ride_name}-${entry.park_name}`}
                       fill={PARK_COLORS[entry.park_name] || "#f5c542"}
