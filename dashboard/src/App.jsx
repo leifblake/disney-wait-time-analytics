@@ -36,6 +36,20 @@ const PARK_ORDER = [
   "Animal Kingdom"
 ];
 
+const PARK_HOURS = {
+  "Magic Kingdom": { open: 9, close: 23 },
+  "Animal Kingdom": { open: 8, close: 18 },
+  EPCOT: { open: 9, close: 21 },
+  "Hollywood Studios": { open: 9, close: 21 }
+};
+
+const MIDDAY_WINDOWS = {
+  "Magic Kingdom": { start: 11, end: 20 },
+  "Animal Kingdom": { start: 10, end: 17 },
+  EPCOT: { start: 11, end: 19 },
+  "Hollywood Studios": { start: 11, end: 19 }
+};
+
 const tooltipStyle = {
   backgroundColor: "#050b16",
   border: "1px solid #334766",
@@ -77,6 +91,58 @@ function getHourOffset(hourString, offset) {
   const nextHour = (hour + offset + 24) % 24;
 
   return `${String(nextHour).padStart(2, "0")}:00`;
+}
+
+function getHourNumber(hourString) {
+  return Number(hourString.split(":")[0]);
+}
+
+function isWithinParkHours(hourString, parkName) {
+  const hours = PARK_HOURS[parkName];
+
+  if (!hours) {
+    return true;
+  }
+
+  const hour = getHourNumber(hourString);
+
+  return hour >= hours.open && hour < hours.close;
+}
+
+function isWithinMiddayWindow(hourString, parkName) {
+  const window = MIDDAY_WINDOWS[parkName];
+
+  if (!window) {
+    return true;
+  }
+
+  const hour = getHourNumber(hourString);
+
+  return hour >= window.start && hour <= window.end;
+}
+
+function formatBestTimeLabel(hourString) {
+  if (!hourString) {
+    return "—";
+  }
+
+  const hour = getHourNumber(hourString);
+  const date = new Date();
+
+  date.setHours(hour, 0, 0, 0);
+
+  return date.toLocaleTimeString([], {
+    hour: "numeric",
+    minute: "2-digit"
+  });
+}
+
+function getLowestWaitRow(rows) {
+  if (rows.length === 0) {
+    return null;
+  }
+
+  return [...rows].sort((a, b) => a.avg_wait_minutes - b.avg_wait_minutes)[0];
 }
 
 function getDynamicYAxisConfig(data, dataKey) {
@@ -342,9 +408,12 @@ function App() {
     return Object.values(grouped);
   }, [filteredStatusCounts]);
 
-  const bestTimeToRide = useMemo(() => {
+  const bestRideTimes = useMemo(() => {
     if (selectedRide === "All Rides") {
-      return null;
+      return {
+        overall: null,
+        midday: null
+      };
     }
 
     const rideRows = rideHourAverages
@@ -353,9 +422,16 @@ function App() {
         selectedPark === "All Parks" ? true : item.park_name === selectedPark
       )
       .filter((item) => item.avg_wait_minutes !== null)
-      .sort((a, b) => a.avg_wait_minutes - b.avg_wait_minutes);
+      .filter((item) => isWithinParkHours(item.hour, item.park_name));
 
-    return rideRows[0] || null;
+    const middayRows = rideRows.filter((item) =>
+      isWithinMiddayWindow(item.hour, item.park_name)
+    );
+
+    return {
+      overall: getLowestWaitRow(rideRows),
+      midday: getLowestWaitRow(middayRows.length > 0 ? middayRows : rideRows)
+    };
   }, [rideHourAverages, selectedRide, selectedPark]);
 
   const keyInsights = useMemo(() => {
@@ -409,6 +485,7 @@ function App() {
       .filter((item) =>
         selectedPark === "All Parks" ? true : item.park_name === selectedPark
       )
+      .filter((item) => isWithinParkHours(item.hour, item.park_name))
       .sort((a, b) => a.hour.localeCompare(b.hour));
   }, [rideHourAverages, selectedRide, selectedPark]);
 
@@ -504,10 +581,16 @@ function App() {
 
         <article className="stat-card">
           <h3>Best Time to Ride</h3>
-          <p>{bestTimeToRide ? bestTimeToRide.hour : "—"}</p>
+          <p>
+            {bestRideTimes.overall
+              ? `Overall: ${formatBestTimeLabel(bestRideTimes.overall.hour)}`
+              : "—"}
+          </p>
           <span>
-            {bestTimeToRide
-              ? `${selectedRide}: ${bestTimeToRide.avg_wait_minutes} min avg`
+            {bestRideTimes.midday
+              ? `Midday Opportunity: ${formatBestTimeLabel(
+                  bestRideTimes.midday.hour
+                )}`
               : "Select a ride to calculate"}
           </span>
         </article>
@@ -823,45 +906,44 @@ function App() {
         </article>
 
         <article className="chart-card wide-chart">
-            <div className="chart-header">
-              <div>
-                <p className="chart-kicker">Ride-Level Pattern</p>
-                <h2>Average Wait by Ride</h2>
-              </div>
+          <div className="chart-header">
+            <div>
+              <p className="chart-kicker">Ride-Level Pattern</p>
+              <h2>Average Wait by Ride</h2>
             </div>
+          </div>
 
-            <div className="chart-container ride-average-chart-container">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={rideAverageChartData}
-                margin={{ top: 16, right: 24, left: 8, bottom: 105 }}
-              >
-                <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
-                <XAxis
-                  dataKey="ride_name"
-                  angle={-35}
-                  textAnchor="end"
-                  interval={0}
-                  height={120}
-                  tick={{ fill: "#b8c3d9", fontSize: 11 }}
-                />
-                <YAxis
-                  domain={rideAverageYAxis.domain}
-                  ticks={rideAverageYAxis.ticks}
-                  allowDataOverflow={false}
-                  tick={{ fill: "#b8c3d9", fontSize: 12 }}
-                />
-                <ChartTooltip />
-                <Bar dataKey="avg_wait_minutes" radius={[10, 10, 0, 0]}>
-                  {rideAverageChartData.map((entry) => (
-                    <Cell
-                      key={`${entry.ride_name}-${entry.park_name}`}
-                      fill={PARK_COLORS[entry.park_name] || "#f5c542"}
-                    />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
+          <div className="ride-average-chart-container">
+            <BarChart
+              width={900}
+              height={360}
+              data={rideAverageChartData}
+              margin={{ top: 24, right: 32, left: 8, bottom: 120 }}
+            >
+              <CartesianGrid strokeDasharray="4 4" stroke="#26364f" />
+              <XAxis
+                dataKey="ride_name"
+                angle={-35}
+                textAnchor="end"
+                interval={0}
+                height={125}
+                tick={{ fill: "#b8c3d9", fontSize: 11 }}
+              />
+              <YAxis
+                domain={rideAverageYAxis.domain}
+                ticks={rideAverageYAxis.ticks}
+                tick={{ fill: "#b8c3d9", fontSize: 12 }}
+              />
+              <ChartTooltip />
+              <Bar dataKey="avg_wait_minutes" radius={[10, 10, 0, 0]}>
+                {rideAverageChartData.map((entry) => (
+                  <Cell
+                    key={`${entry.ride_name}-${entry.park_name}`}
+                    fill={PARK_COLORS[entry.park_name] || "#f5c542"}
+                  />
+                ))}
+              </Bar>
+            </BarChart>
           </div>
         </article>
 
@@ -1124,7 +1206,7 @@ function App() {
           <img
             className="developer-photo"
             src={`${import.meta.env.BASE_URL}leif2.jpg`}
-            alt="Leif Blake at Walt Disney World"
+            alt="Leif Blake in Cosmic Ray's Uniform"
           />
         </div>
       </section>
